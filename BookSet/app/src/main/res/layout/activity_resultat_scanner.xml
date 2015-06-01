@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pji.example.pji.bookset.recherche.ResultatScannerActivity"
+    style="@style/Activity">
+
+    <TextView
+        style="@style/BookSet"
+        android:text="Book Set"
+        android:id="@+id/app_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/biblio"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true" />
+    <Button
+        style="@style/Biblio"
+        android:text="Bibliothèque"
+        android:id="@+id/biblio"
+        android:onClick="accueil"
+        android:layout_alignTop="@+id/ajout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <Button
+        style="@style/Ajout"
+        android:text="@string/ajout"
+        android:id="@+id/ajout"
+        android:onClick="ajouterElement"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/biblio"
+        android:layout_toEndOf="@+id/biblio" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/resultat"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ListView
+        style="@style/listLivre"
+        android:id="@+id/listResultatScanner"
+        android:layout_above="@+id/autreRecherche"
+        android:layout_below="@+id/biblio"
+        android:layout_alignLeft="@+id/resultat"
+        android:layout_alignStart="@+id/resultat"
+        android:layout_toStartOf="@+id/ajout"
+        android:layout_alignRight="@+id/ajout"
+        android:layout_alignEnd="@+id/ajout" />
+
+    <Button
+        style="@style/Recherche"
+        android:text="Faire une autre recherche"
+        android:id="@+id/autreRecherche"
+        android:onClick="rechercheManuelle"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

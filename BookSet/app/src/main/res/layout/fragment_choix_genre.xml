@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pji.example.pji.bookset.accueil.ChoixGenreFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choisissez le genre"
+        android:textStyle="bold|normal|italic"
+        android:textSize="50px"
+        android:gravity="center"
+        android:id="@+id/genre"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Genrespinner"
+        android:layout_below="@+id/genre"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/suivant"
+        android:id="@+id/suivantGenre"
+        android:width="193dp"
+        android:onClick="suiteAfficher"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/annulerGenre"
+        android:layout_toEndOf="@+id/annulerGenre" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/annuler"
+        android:id="@+id/annulerGenre"
+        android:onClick="annuler"
+        android:width="193dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+
+</RelativeLayout>

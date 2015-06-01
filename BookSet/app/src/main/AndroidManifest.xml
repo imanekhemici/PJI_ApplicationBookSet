@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pji.example.pji.bookset" >
+
+    <uses-sdk android:minSdkVersion="4" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <uses-permission
+        android:name="android.permission.CAMERA"
+        android:required="false" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-function
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".accueil.AccueilActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ajout.AjouterActivity"
+            android:label="@string/title_activity_ajouter_element"
+            android:parentActivityName=".accueil.AccueilActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".accueil.AccueilActivity" />
+        </activity>
+        <activity
+            android:name=".ajout.AjouterElementActivity"
+            android:label="Compléter"
+            android:parentActivityName=".ajout.AjouterActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ajout.AjouterActivity" />
+        </activity>
+        <activity
+            android:name=".ajout.AjoutElementSuiteActivity"
+            android:label="Compléter" >
+        </activity>
+        <activity
+            android:name=".accueil.ChoixGenreFragment"
+            android:label="@string/title_choix_genre_fragment" >
+        </activity>
+        <activity
+            android:name=".accueil.AfficherLivresParGenreFragment"
+            android:label="@string/title_afficher_livre_pargenre_fragment" >
+        </activity>
+        <activity
+            android:name=".ajout.AjouterElementManSuite2Activity"
+            android:label="Compléter" >
+        </activity>
+        <activity
+            android:name=".ajout.ConfirmationAjout"
+            android:label="Confirmation" >
+        </activity>
+        <activity
+            android:name=".ajout.Confirmation"
+            android:label="@string/title_activity_confirmation" >
+        </activity>
+        <activity
+            android:name=".recherche.RechercheChoixActivity"
+            android:label="Choix" >
+        </activity>
+        <activity
+            android:name=".recherche.RechercheActivity"
+            android:label="Recherche" >
+        </activity>
+        <activity
+            android:name=".recherche.ResulatActivity"
+            android:label="Resultat" >
+        </activity>
+        <activity
+            android:name="jim.h.common.android.zxinglib.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".InformationActivity"
+            android:label="Information" >
+        </activity>
+        <activity
+            android:name=".InformationLivre"
+            android:label="Information" >
+        </activity>
+        <activity
+            android:name=".ajout.AjoutElementGenreActivity"
+            android:label="Compléter" >
+        </activity>
+        <activity
+            android:name=".modification.Modification1Activity"
+            android:label="Modifier" >
+        </activity>
+        <activity
+            android:name=".modification.Modification2Activity"
+            android:label="Modifier" >
+        </activity>
+        <activity
+            android:name=".modification.Modification3Activity"
+            android:label="Modifier" >
+        </activity>
+        <activity
+            android:name=".recherche.ResultatScannerActivity"
+            android:label="@string/title_activity_resultat_scanner" >
+        </activity>
+        <activity
+            android:name=".ajout.AjoutScannerActivity"
+            android:label="Scanner" >
+        </activity>
+
+    </application>
+
+</manifest>

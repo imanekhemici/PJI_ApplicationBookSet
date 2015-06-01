@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pji.example.pji.bookset.modification.Modification2Activity"
+    style="@style/Activity">
+
+    <TextView
+        style="@style/BookSet"
+        android:text="Book Set"
+        android:id="@+id/app_name"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/biblio"
+        android:elegantTextHeight="true"
+        android:textIsSelectable="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <Button
+        style="@style/Biblio"
+        android:text="@string/annuler"
+        android:id="@+id/annuler"
+        android:onClick="annuler"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="@style/Ajout"
+        android:text="@string/suivant"
+        android:id="@+id/suivant"
+        android:onClick="suite2Modif"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/GenrespinnerModif"
+        android:layout_below="@+id/app_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="65dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/emprunteModif"
+        android:hint="Emprunté"
+        android:width="300dp"
+        android:gravity="center"
+        android:layout_below="@+id/GenrespinnerModif"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/preteModif"
+        android:hint="Preté"
+        android:width="300dp"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/emprunteModif"
+        android:layout_alignStart="@+id/emprunteModif" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rotateModif"
+        android:layout_below="@+id/preteModif"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/appareilModif"
+        android:layout_above="@+id/annuler"
+        android:layout_alignRight="@+id/preteModif"
+        android:layout_alignEnd="@+id/preteModif" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/appareilModif"
+        android:src="@drawable/appa"
+        android:onClick="FromCamera"
+        android:layout_alignTop="@+id/rotateModif"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gallerieModif"
+        android:src="@drawable/gal"
+        android:onClick="FromCard"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/appareilModif"
+        android:layout_alignLeft="@+id/appareilModif"
+        android:layout_alignStart="@+id/appareilModif" />
+
+
+</RelativeLayout>

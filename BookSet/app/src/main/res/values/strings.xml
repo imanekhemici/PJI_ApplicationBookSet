@@ -1,0 +1,129 @@
+<resources>
+    <string name="app_name">BookSet</string>
+
+    <string name="accueil">Accueil</string>
+    <string name="favoris">Favoris</string>
+    <string name="panier">Panier</string>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="synchroniser">Synchroniser avec un autre appareil</string>
+    <string name="configurer">Configurer l \'affichage</string>
+
+    <string name="biblio">Bibliothèque</string>
+    <string name="manuel">Ajouter Manuellement</string>
+    <string name="scan">Scanner</string>
+    <string name="livre">Livres</string>
+    <string name="ajout">Ajouter</string>
+    <string name="title_activity_activity_ajouter_element">activity_ajouter_element</string>
+    <string name="importer">Importer fichier</string>
+    <string name="exporter">Exporter fichier</string>
+    <string name="afficher_par">Afficher Par </string>
+
+    <string name="title_activity_ajouter_element">Ajout d\'élément(s)</string>
+    <string name="title_activity_ajouter_element_activity">Complèter</string>
+    <string name="annuler">Annuler</string>
+    <string name="suivant">Suivant</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_ajout_element_suite">ajoutElementSuite</string>
+
+    <string name="hello_world">Hello world!</string>
+
+    <string name="title_activity_ajouter_element_man_suite2">ajouter_element_man_suite2</string>
+    <string name="title_activity_confirmation_ajout">ConfirmationAjout</string>
+    <string name="title_activity_confirmation">Confirmation</string>
+    <string name="title_activity_recherche_choix">RechercheChoixActivity</string>
+    <string name="title_activity_recherche">RechercheActivity</string>
+    <string name="title_activity_resulat">ResulatActivity</string>
+    <string name="title_activity_information">InformationActivity</string>
+    <string name="title_activity_information_livre">InformationLivre</string>
+    <string name="title_choix_genre_fragment">Choix du genre à afficher</string>
+    <string name="title_afficher_livre_pargenre_fragment">Resultat</string>
+
+
+
+    <string-array name="settings_array">
+        <item>Accueil</item>
+        <item>Favoris</item>
+        <item>Panier</item>
+        <item>Non lu(s)</item>
+        <item>Lu(s)</item>
+
+
+    </string-array>
+
+    <string-array name="configurer_array">
+        <item>Des titres</item>
+        <item>Des auteurs</item>
+        <item>Des Genres</item>
+
+    </string-array>
+
+    <string-array name="synchroniser_array">
+        <item>Importer fichier</item>
+        <item>Exporter fichier</item>
+
+    </string-array>
+
+    <string name="pick_option_synchroniser">Vous souhaitez: </string>
+    <string name="pick_option_configurer">Afficher par ordre alphabétique : </string>
+
+    <string-array name="options_array">
+        <item>Synchoniser avec un autre appareil</item>
+        <item>Configurer l\'affichage</item>
+
+    </string-array>
+
+        <string-array name="recherche_array">
+            <item>Isbn</item>
+            <item>Titre</item>
+            <item>Auteur</item>
+            <item>Langue</item>
+            <item>Genre</item>
+        </string-array>
+        <string name="title_activity_ajout_element_genre">AjoutElementGenreActivity</string>
+    <string-array name="genre_array">
+        <item>Actu, Politique et Société</item>
+        <item>Adolescents</item>
+        <item>Art, Musique et Cinéma</item>
+        <item>Bandes dessinées</item>
+        <item>Beaux livres</item>
+        <item>Cuisine et Vins</item>
+        <item>Dictionnaires, langues et encyclopédies</item>
+        <item>Droit</item>
+        <item>Entreprise et Bourse</item>
+        <item>Érotisme</item>
+        <item>Esotérisme et Paranormal</item>
+        <item>Etudes supérieures</item>
+        <item>Famille, Santé et Bien-être</item>
+        <item>Fantasy et Terreur</item>
+        <item>Histoire</item>
+        <item>Humour</item>
+        <item>Informatique et Internet</item>
+        <item>Littérature</item>
+        <item>Littérature sentimentale</item>
+        <item>Livres pour enfants</item>
+        <item>Loisirs créatifs, décoration et bricolage</item>
+        <item>Manga</item>
+        <item>Nature et animaux</item>
+        <item>Policier et Suspense</item>
+        <item>Religions et Spiritualités</item>
+        <item>Science-Fiction</item>
+        <item>Sciences humaines</item>
+        <item>Sciences, Techniques et Médecine</item>
+        <item>Scolaire et Parascolaire</item>
+        <item>Sports et passions</item>
+        <item>Tourisme et Voyages</item>
+
+    </string-array>
+        <string name="title_activity_modification1">Modification1Activity</string>
+        <string name="title_activity_modification2">Modification2Activity</string>
+        <string name="title_activity_modification3">Modification3Activity</string>
+        <string name="title_activity_resultat_scanner">ResultatScannerActivity</string>
+        <string name="title_activity_ajout_scanner">AjoutScannerActivity</string>
+</resources>

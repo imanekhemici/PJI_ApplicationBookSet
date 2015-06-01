@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pji.example.pji.bookset.modification.Modification1Activity"
+    style="@style/Activity">
+
+    <TextView
+        style="@style/BookSet"
+        android:text="Book Set"
+        android:id="@+id/app_name"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/biblio"
+        android:elegantTextHeight="true"
+        android:textIsSelectable="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/titreModif"
+        android:hint="Titre"
+        android:width="300dp"
+        android:gravity="center"
+        android:layout_below="@+id/app_name"
+        android:layout_alignLeft="@+id/auteurModif"
+        android:layout_alignStart="@+id/auteurModif"
+        android:layout_marginTop="47dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/auteurModif"
+        android:hint="Auteur"
+        android:width="300dp"
+        android:gravity="center"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/titreModif"
+        android:layout_alignLeft="@+id/isbnModif"
+        android:layout_alignStart="@+id/isbnModif" />
+
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/isbnModif"
+        android:hint="Isbn"
+        android:numeric="integer"
+        android:maxLength="13"
+        android:width="300dp"
+        android:gravity="center"
+        android:layout_below="@+id/auteurModif"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/langueModif"
+        android:hint="Langue"
+        android:width="300dp"
+        android:gravity="center"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/isbnModif"
+        android:layout_alignLeft="@+id/isbnModif"
+        android:layout_alignStart="@+id/isbnModif" />
+
+    <Button
+        style="@style/Biblio"
+        android:text="@string/annuler"
+        android:id="@+id/annuler"
+        android:onClick="annuler"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="@style/Ajout"
+        android:text="@string/suivant"
+        android:id="@+id/suivant"
+        android:onClick="suivantModif"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/annuler"
+        android:layout_toEndOf="@+id/annuler" />
+
+
+
+</RelativeLayout>

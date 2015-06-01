@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/Activity"
+    tools:context="pji.example.pji.bookset.ajout.AjoutElementGenreActivity"
+    >
+
+    <TextView
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        style="@style/BookSet"
+        android:text="Book Set"
+        android:id="@+id/app_name"
+        android:layout_above="@+id/biblio"
+    />
+
+    <Button
+        style="@style/Biblio"
+        android:text="@string/annuler"
+        android:id="@+id/annuler"
+        android:onClick="annuler"
+        android:layout_alignParentBottom="true" />
+
+    <Button
+        style="@style/Ajout"
+        android:text="@string/suivant"
+        android:id="@+id/suivant"
+        android:onClick="suite"
+        android:layout_alignBottom="@+id/annuler"
+        android:layout_toRightOf="@+id/annuler"
+        android:layout_toEndOf="@+id/annuler" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Genrespinner"
+        android:layout_below="@+id/app_name"
+        android:layout_alignRight="@+id/appareil"
+        android:layout_alignEnd="@+id/appareil"
+        android:layout_marginTop="57dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/emprunte"
+        android:hint="Emprunté"
+        android:width="300dp"
+        android:gravity="center"
+        android:layout_below="@+id/Genrespinner"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/prete"
+        android:hint="Preté"
+        android:width="300dp"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/emprunte"
+        android:layout_alignStart="@+id/emprunte" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rotate"
+        android:clickable="true"
+        android:layout_above="@+id/annuler"
+        android:layout_toLeftOf="@+id/appareil"
+        android:layout_alignLeft="@+id/prete"
+        android:layout_alignStart="@+id/prete"
+        android:layout_alignTop="@+id/appareil" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/appareil"
+        android:layout_marginTop="41dp"
+        android:src="@drawable/appa"
+        android:onClick="FromCamera"
+        android:layout_below="@+id/prete"
+        android:layout_toRightOf="@+id/prete"
+        android:layout_toEndOf="@+id/prete" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gallerie"
+        android:src="@drawable/gal"
+        android:onClick="FromCard"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/appareil"
+        android:layout_alignLeft="@+id/appareil"
+        android:layout_alignStart="@+id/appareil" />
+
+</RelativeLayout>

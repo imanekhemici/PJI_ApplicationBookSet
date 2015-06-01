@@ -1,0 +1,6 @@
+<root>
+    <item name='jim.h.common.android.zxinglib.integrator.IntentIntegrator'>
+        <annotation name='java.lang.annotation.Deprecated' />
+        <annotation name='org.jetbrains.annotations.NotNull' />
+    </item>
+</root>

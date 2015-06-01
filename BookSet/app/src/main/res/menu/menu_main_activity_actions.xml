@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- synchroniser avec un autre appareil-->
+    <item android:id="@+id/synchroniser"
+        android:title="@string/synchroniser"
+        android:showAsAction="ifRoom" />
+    <!-- Configurer l'affichage-->
+    <item android:id="@+id/configurer"
+        android:title="@string/configurer"
+        android:showAsAction="ifRoom" />
+</menu>

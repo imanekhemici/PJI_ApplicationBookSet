@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pji.example.pji.bookset.modification.Modification3Activity"
+    style="@style/Activity">
+
+    <TextView
+        style="@style/BookSet"
+        android:text="Book Set"
+        android:id="@+id/app_name"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/biblio"
+        android:elegantTextHeight="true"
+        android:textIsSelectable="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/publie"
+        android:hint="Publié le"
+        android:width="300dp"
+        android:gravity="center"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/app_name"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="@style/Biblio"
+        android:text="@string/annuler"
+        android:id="@+id/annuler"
+        android:onClick="annuler"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="@style/Ajout"
+        android:text="Confirmer"
+        android:id="@+id/confirmerModif"
+        android:onClick="confirmerModif"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/annuler"
+        android:layout_toEndOf="@+id/annuler" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Note Perso"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:id="@+id/note_perso"
+        android:layout_below="@+id/publie"
+        android:layout_alignLeft="@+id/publie"
+        android:layout_alignStart="@+id/publie" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/notepersoModif"
+        android:progressBackgroundTint="@color/bright_foreground_material_light"
+        android:layout_below="@+id/note_perso"
+        android:layout_alignLeft="@+id/note_perso"
+        android:layout_alignStart="@+id/note_perso" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Note"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:id="@+id/notetext"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/notepersoModif"
+        android:layout_alignStart="@+id/notepersoModif" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/noteModif"
+        android:progressBackgroundTint="@color/bright_foreground_material_light"
+        android:layout_below="@+id/notetext"
+        android:layout_alignLeft="@+id/notetext"
+        android:layout_alignStart="@+id/notetext" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Favoris"
+        android:textSize="20dp"
+        android:id="@+id/favorisModif"
+        android:checked="false"
+        android:layout_below="@+id/noteModif"
+        android:layout_alignLeft="@+id/noteModif"
+        android:layout_alignStart="@+id/noteModif" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lu"
+        android:textSize="20dp"
+        android:id="@+id/luModif"
+        android:checked="false"
+        android:layout_below="@+id/favorisModif"
+        android:layout_alignLeft="@+id/favorisModif"
+        android:layout_alignStart="@+id/favorisModif"
+        android:layout_alignRight="@+id/note_persoModif"
+        android:layout_alignEnd="@+id/note_persoModif" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="M&apos;appartient"
+        android:textSize="20dp"
+        android:id="@+id/mappartientModif"
+        android:checked="false"
+        android:layout_below="@+id/luModif"
+        android:layout_alignLeft="@+id/luModif"
+        android:layout_alignStart="@+id/luModif" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Panier"
+        android:textSize="20dp"
+        android:id="@+id/panierModif"
+        android:layout_below="@+id/mappartientModif"
+        android:layout_alignLeft="@+id/mappartientModif"
+        android:layout_alignStart="@+id/mappartientModif" />
+
+
+</RelativeLayout>
